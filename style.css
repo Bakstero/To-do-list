@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100%;
+    background-color: #f3f2fd;
+    box-sizing: border-box;
+}
+
+header {
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #333333;
+	font-size: 5rem;
+	font-weight: 50;
+	text-align: center;
+}
+
+.inputDiv{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input{
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 350px;
+    transition: .5s;
+	font-size: 1.15rem;
+	border-radius: 10px;
+	background: #f3f2fd;
+	box-shadow: 5px 5px 10px #e7e6f0,
+            -5px -5px 10px #fffeff;
+}
+
+.input:focus {
+	box-shadow: inset 5px 5px 10px #e7e6f0,
+				inset -5px -5px 10px #fffeff;
+}
+
+.add{
+	outline: none;
+	border: none;
+	margin-left: 25px;
+    height: 50px;
+    width: 50px;
+	border-radius: 10px;
+	background: #f3f2fd;
+	box-shadow: 5px 5px 10px #e7e6f0,
+				-5px -5px 10px #fffeff;
+}
+
+.add:active{
+	box-shadow: inset 5px 5px 10px #e7e6f0,
+				inset -5px -5px 10px #fffeff;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.item{
+	padding: 0.5rem;
+	margin-bottom: 2rem;
+	border-radius: 10px;
+	background: #f3f2fd;
+	box-shadow: 5px 5px 10px #e7e6f0,
+				-5px -5px 10px #fffeff;
+	width: 400px;
+}
+
+.item_input{
+	background: none;
+	outline: none;
+	border: none;
+	color: #333333;
+	font-size: 1.5rem;
+	width: 245px;
+}
+.remove{
+	background: none;
+	outline: none;
+	border: none;
+	color: #E00;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 750px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	.input {
+		width:250px;
+		height: 45px
+	}
+
+	.add {
+		width: 45px;
+		height: 45px;
+	}
+
+	.item {
+		width: 280px;
+	}
+
+	.item_input {
+		width: 200px;
+		font-size: 1.2rem;
+	}
+
+	.remove {
+		font-size: 1rem;
+	}
+}
+@media only screen and (max-width: 350px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	.input {
+		width:220px;
+		height: 45px
+	}
+
+	.item {
+		width: 240px;
+	}
+
+	.item_input {
+		width: 150px;
+		font-size: 1.2rem;
+	}
+}
